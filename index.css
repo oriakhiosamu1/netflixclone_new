@@ -1,0 +1,415 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/netfliximage.jpg);
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 0px 5%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    display: block;
+    width: 170px;
+    margin-top: -13px;
+    margin-left: -6px;
+}
+
+nav .logo {
+    background-color: transparent;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(233, 10, 10);
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+.main {
+    color: white;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.main-div {
+    color: white;
+    margin-top: 18vh;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 50px;
+}
+
+.main .big {
+    font-size: 27px;
+    margin: 20px;
+}
+
+.main .small {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52%;
+    margin: auto;
+
+}
+
+.main form input {
+    width: 70%;
+    outline: none;
+    border: 2px solid rgba(29, 65, 184, 0.5);
+    font-size: 18px;
+    padding: 16px 20px;
+}
+
+.main form button {
+    width: 30%;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding: 12px 0px;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(233, 10, 10);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.main form button:hover {
+    background-color: rgba(233, 10, 10, 0.9);
+}
+
+.form {
+    margin: 0px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8%;
+    font-size: 30px;
+    border-top: 7px solid rgba(214, 212, 212, 0.5);
+}
+
+.tv {
+    width: 500px;
+}
+
+.mobile {
+    width: 500px;
+    margin-left: -50px;
+}
+
+.kids {
+    width: 500px;
+}
+
+.center {
+    padding: 50px 8%;
+    font-size: 30px;
+    border-top: 7px solid rgba(214, 212, 212, 0.5);
+}
+
+.acc {
+    text-align: center;
+    font-size: 30px;
+    border-top: 7px solid rgba(214, 212, 212, 0.5);
+    padding: 50px 8%;
+}
+
+.acc .h1 {
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 80px 15% 50px;
+    margin-top: 100px;
+    border-top: 7px solid rgba(214, 212, 212, 0.5);
+    color: rgba(214, 212, 212, 0.5);
+}
+
+footer a {
+    color: rgba(214, 212, 212, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .question {
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+footer ul a {
+    font-size: 14px;
+}
+
+.accordion {
+    background-color: rgba(134, 134, 134, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 5px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: rgba(134, 134, 134, 0.5);
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\00D7";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: rgba(134, 134, 134, 0.5);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 3px;
+    text-align: left;
+  }
+
+  .panel p {
+    padding: 20px 0px;
+  }
+
+@media screen and (max-width: 1200px) {
+    .main form {
+        width: 70%;
+    }
+    .main-div {
+        margin-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main button {
+        font-size: 20px;
+    }
+   section {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+   } 
+   section br {
+    display: none;
+   }
+   section h1 {
+    margin-bottom: 20px;
+   }
+   section p {
+    font-size: 20px;
+   }
+   .center {
+    text-align: center;
+    font-size: 25px;
+   }
+   .center br {
+    display: none;
+   }
+   .center h1 {
+    margin-bottom: 20px;
+   }
+   .center p {
+    font-size: 20px;
+   }
+   .mob {
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .accordion {
+    width: 90%;
+    padding: 15px;
+   }
+   .panel {
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 900px) {
+
+    .main form{
+        flex-direction: column;
+    }
+
+    .main form input {
+        width: 500px;
+        font-size: 18px;
+    }
+
+    .main form button {
+        width: 150px;
+        margin-top: 15px;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    .main .big {
+        font-size: 25px;
+    }
+
+    .main .small {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+    footer ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        height: 15vh;
+    }
+    nav img {
+        display: block;
+        width: 130px;
+        margin-top: 0px;
+        margin-left: -30px;
+    }
+    .main br {
+        display: none;
+    }
+    .main h1 {
+        font-size: 25px;
+        width: 100%;
+    }
+    .main form input {
+        width: 430px;
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+    .main form button {
+        width: 130px;
+        margin-top: 12px;
+        font-size: 16px;
+    }
+    .main .big {
+        font-size: 18px;
+    }
+    .main .small {
+        font-size: 18px;
+    }
+    .tv, .kids, .mobile {
+        width: 300px;
+        margin: auto;
+    }
+    footer ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .acc {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+    .acc .h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+    .accordion {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 20px;
+       }
+    .panel {
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main form input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .main form{
+        flex-direction: column;
+    }
+
+    .main form input {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .main form button {
+        width: 150px;
+        margin-top: 15px;
+        font-size: 18px;
+        padding: 8px 0px;
+    }
+
+    .main .big {
+        font-size: 25px;
+    }
+
+    .main .small {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+}

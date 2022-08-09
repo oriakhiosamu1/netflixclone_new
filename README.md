@@ -1,1 +1,2 @@
-# netflixclone_new
+# netflixclone
+this is a netflixclone project

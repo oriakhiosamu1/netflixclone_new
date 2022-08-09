@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(images/netfliximage.jpg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+
+nav img {
+    display: block;
+    width: 170px;
+    margin-top: -13px;
+    margin-left: -6px;
+}
+
+form {
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 450px;
+    margin: auto;
+    padding: 60px;
+    padding-bottom: 100px;
+    border-radius: 5px;
+}
+
+form h1 {
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 18px 10px;
+    font-size: 16px;
+    background-color: rgba(100, 98, 98, 0.5);
+}
+
+form button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(233, 10, 10);
+}
+
+form .remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .remember p {
+    display: flex;
+    align-items: center;
+    color: rgba(214, 212, 212, 0.5);
+}
+
+form .remember input {
+    width: 20px;
+    height: 15px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+form .remember a {
+    color: rgba(214, 212, 212, 0.5);
+    text-decoration: none;
+}
+
+form .new {
+    color: rgba(214, 212, 212, 0.5);
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+form .new a{
+    color: white;
+    text-decoration: none;
+}
+
+form .captcha {
+    color: rgba(214, 212, 212, 0.5);
+}
+
+form .captcha a{
+    color: rgb(0, 68, 255);
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 15%;
+    margin-top: 100px;
+}
+
+footer a {
+    color: rgba(214, 212, 212, 0.5);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .question {
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+footer ul a {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 740px) {
+    nav {
+        padding: 0px 3%;
+    }
+    nav img {
+        width: 150px;
+    }
+    header {
+        background: black;
+    }
+    form {
+        width: 90%;
+        background: black;
+        margin-top: -20px;
+        padding: 30px 0px;
+    }
+
+    footer {
+        border-top: 1px solid rgba(214, 212, 212, 0.5);
+        text-align: left;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 30px 5%;
+        margin-top: 0px;
+    }
+    footer ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav img {
+        width: 100px;
+        /* margin-left: -10px; */
+    }
+    footer ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
